@@ -272,12 +272,14 @@ const routes = [
   {
     name: "Kontakty",
     icon: <Icon>contacts</Icon>,
-    href: "https://www.github.com/creativetimofficial/material-kit-react",
+    route: "/pages/landing-pages/authors",
+    component: <Author />,
   },
   {
     name: "O firmě",
     icon: <Icon>info</Icon>,
-    href: "https://www.github.com/creativetimofficial/material-kit-react",
+    route: "/pages/landing-pages/about-us",
+    component: <AboutUs />,
   },
 ];
 

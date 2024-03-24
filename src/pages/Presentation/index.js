@@ -25,7 +25,7 @@ import MKSocialButton from "components/MKSocialButton";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+import CenteredFooter from "examples/Footers/CenteredFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
@@ -41,10 +41,9 @@ import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
 
 // Routes
 import routes from "routes";
-import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "assets/images/bg-1.jpg";
 
 function Presentation() {
   return (
@@ -52,9 +51,9 @@ function Presentation() {
       <DefaultNavbar
         routes={routes}
         action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
+          type: "internal",
+          route: "/pages/landing-pages/contact-us",
+          label: "Kontaktovat nás",
           color: "info",
         }}
         sticky
@@ -83,7 +82,7 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              Stavební firma - Václav Čáp{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -92,8 +91,7 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
+              Novostavby a rekonstrukce zděné pasivní domy a rodinné domy.
             </MKTypography>
           </Grid>
         </Container>
@@ -201,22 +199,13 @@ function Presentation() {
                   <i className="fab fa-facebook" />
                   &nbsp;Share
                 </MKSocialButton>
-                <MKSocialButton
-                  component="a"
-                  href="https://www.pinterest.com/pin/create/button/?url=https://www.creative-tim.com/product/material-kit-react"
-                  target="_blank"
-                  color="pinterest"
-                >
-                  <i className="fab fa-pinterest" />
-                  &nbsp;Pin it
-                </MKSocialButton>
               </Grid>
             </Grid>
           </Container>
         </MKBox>
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
+      <MKBox mt="auto">
+        <CenteredFooter />
       </MKBox>
     </>
   );

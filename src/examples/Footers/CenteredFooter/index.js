@@ -23,18 +23,13 @@ import Stack from "@mui/material/Stack";
 
 // @mui icons
 import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import PinterestIcon from "@mui/icons-material/Pinterest";
-import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function CenteredFooter({ company, links, socials, light }) {
-  const { href, name } = company;
-
+function CenteredFooter({ links, socials, light }) {
   const year = new Date().getFullYear();
 
   const renderLinks = links.map((link) => (
@@ -84,16 +79,16 @@ function CenteredFooter({ company, links, socials, light }) {
         </Grid>
         <Grid item xs={12} lg={8} sx={{ textAlign: "center" }}>
           <MKTypography variant="body2" color={light ? "white" : "secondary"}>
-            Copyright &copy; {year} Material by{" "}
+            Copyright &copy; {year} Vytvořil{" "}
             <MKTypography
               component={Link}
-              href={href}
+              href="mailto: puty@duck.com"
               target="_blank"
               rel="noreferrer"
               variant="body2"
               color={light ? "white" : "secondary"}
             >
-              {name}
+              Puty
             </MKTypography>
             .
           </MKTypography>
@@ -105,30 +100,21 @@ function CenteredFooter({ company, links, socials, light }) {
 
 // Setting default values for the props of CenteredFooter
 CenteredFooter.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+  company: { href: "https://www.vaclavcap.cz", name: "Václav Čáp" },
   links: [
-    { href: "https://www.creative-tim.com/", name: "Company" },
-    { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-    { href: "https://www.creative-tim.com/presentation", name: "Team" },
-    { href: "https://www.creative-tim.com/templates/react", name: "Products" },
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
-    { href: "https://www.creative-tim.com/license", name: "License" },
+    { href: "/pages/landing-pages/about-us", name: "O firmě" },
+    { href: "pages/landing-pages/authors", name: "Kontakty" },
+    { href: "https://www.creative-tim.com/presentation", name: "Služby" },
   ],
   socials: [
-    { icon: <FacebookIcon fontSize="small" />, link: "https://www.facebook.com/CreativeTim/" },
     {
-      icon: <TwitterIcon fontSize="small" />,
-      link: "https://twitter.com/creativetim",
+      icon: <FacebookIcon fontSize="small" />,
+      link: "https://www.facebook.com/",
     },
     {
       icon: <InstagramIcon fontSize="small" />,
-      link: "https://www.instagram.com/creativetimofficial/",
+      link: "https://www.instagram.com/",
     },
-    {
-      icon: <PinterestIcon fontSize="small" />,
-      link: "https://ro.pinterest.com/thecreativetim/",
-    },
-    { icon: <GitHubIcon fontSize="small" />, link: "https://github.com/creativetimofficial" },
   ],
   light: false,
 };

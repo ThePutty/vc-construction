@@ -14,7 +14,3 @@ npm run build
 npm install --save-dev gh-pages
 npm run deploy -- -m "Deploy React app to GitHub Pages"
 ```
-
-## Licensing
-- Copyright 2023 [Creative Tim](https://www.creative-tim.com?ref=readme-mkr)
-- Creative Tim [license](https://www.creative-tim.com/license?ref=readme-mkr)

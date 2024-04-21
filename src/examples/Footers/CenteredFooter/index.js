@@ -102,6 +102,7 @@ function CenteredFooter({ links, socials, light }) {
 CenteredFooter.defaultProps = {
   company: { href: "https://www.vaclavcap.cz", name: "Václav Čáp" },
   links: [
+    { href: "/pages/landing-pages/about-us", name: "Volná místa" },
     { href: "/pages/landing-pages/about-us", name: "O firmě" },
     { href: "pages/landing-pages/authors", name: "Kontakty" },
     { href: "https://www.creative-tim.com/presentation", name: "Služby" },

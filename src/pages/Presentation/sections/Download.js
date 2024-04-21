@@ -77,7 +77,7 @@ function Download() {
         <Grid container item xs={6} mx="auto">
           <MKBox textAlign="center">
             <MKTypography variant="h3" mt={6} mb={3}>
-              Available on these technologies
+              Výběr realizovaných zakázek
             </MKTypography>
             <Grid container spacing={3} justifyContent="center">
               <Grid item xs={4} lg={2}>

@@ -25,6 +25,8 @@ import RotatingCard from "examples/Cards/RotatingCard";
 import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
 import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
+import MKTypography from "components/MKTypography";
+import MKButton from "components/MKButton";
 
 // Images
 import bgFront from "assets/images/rotating-card-bg-front.jpeg";
@@ -32,8 +34,31 @@ import bgBack from "assets/images/rotating-card-bg-back.jpeg";
 
 function Information() {
   return (
-    <MKBox component="section" py={6} my={6}>
+    <MKBox component="section" py={3} my={3}>
       <Container>
+        <Grid
+          container
+          item
+          xs={12}
+          lg={6}
+          flexDirection="column"
+          alignItems="center"
+          sx={{ textAlign: "center", my: 3, mx: "auto", px: 0.75 }}
+        >
+          <MKTypography variant="h2" fontWeight="bold">
+            Výběr našich služeb
+          </MKTypography>
+          <MKTypography variant="body1" color="text">
+            od výstavby přes zateplení po rekonstrukce
+          </MKTypography>
+          <MKButton
+            variant="gradient"
+            color="info"
+            href="/pages/landing-pages/construction-services"
+          >
+            Čti více
+          </MKButton>
+        </Grid>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
             <RotatingCard>
@@ -42,21 +67,21 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Feel the
+                    Kalkulace
                     <br />
-                    Material Kit
+                    stavebník prací
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="Plánujete rekonstrukci domu či bytu? Potřebujete nové rozvody, nebo zateplit fasádu?"
               />
               <RotatingCardBack
                 image={bgBack}
-                title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                title="Kalkulace stavebních prací"
+                description="Provádíme veškeré stavební práce. Odešlete nám nezávaznou poptávku stavebních prací."
                 action={{
                   type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  route: "/pages/landing-pages/contact-us",
+                  label: "Kontatovat nás",
                 }}
               />
             </RotatingCard>
@@ -66,16 +91,15 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
+                  title="Zemní práce"
+                  description="Zemní a výkopové práce. Výkopy základů, jímek, bazénů, apod. Demoliční, bourací práce malých rozsahů."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
+                  title="Revitalizace bytových domů"
+                  description="Kompletní revitalizace nejen panelových domů zahrnuje veškeré práce - od výměny oken, zavěšení lodžie, po malířské práce."
                 />
               </Grid>
             </Grid>
@@ -83,15 +107,15 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
+                  title="Zateplení"
+                  description="Zateplení fasád, stropů sklepů a podlahy půdy."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
+                  title="Rekonstrukce"
+                  description="Už se vám nelíbí vzhled vašeho příbytku? Provádíme rekonstrukce všech bytových i nebytových prostor."
                 />
               </Grid>
             </Grid>

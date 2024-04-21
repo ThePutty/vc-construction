@@ -38,4 +38,14 @@ export default [
     name: "Author Page",
     route: "/pages/landing-pages/author",
   },
+  {
+    image: `${imagesPrefix}/author.jpg`,
+    name: "Job Page",
+    route: "/pages/landing-pages/jobs",
+  },
+  {
+    image: `${imagesPrefix}/author.jpg`,
+    name: "ConstructionService Page",
+    route: "/pages/landing-pages/construction-services",
+  },
 ];

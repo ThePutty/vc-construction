@@ -44,6 +44,8 @@ import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
 import SignIn from "layouts/pages/authentication/sign-in";
+import Jobs from "layouts/pages/landing-pages/jobs";
+import ConstructionServices from "layouts/pages/landing-pages/construction-services";
 
 // Sections
 import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -89,6 +91,16 @@ const routes = [
             name: "author",
             route: "/pages/landing-pages/author",
             component: <Author />,
+          },
+          {
+            name: "jobs",
+            route: "/pages/landing-pages/jobs",
+            component: <Jobs />,
+          },
+          {
+            name: "construction services",
+            route: "/pages/landing-pages/construction-services",
+            component: <ConstructionServices />,
           },
         ],
       },
@@ -267,13 +279,20 @@ const routes = [
   {
     name: "Služby",
     icon: <Icon>engineering</Icon>,
-    href: "https://www.github.com/creativetimofficial/material-kit-react",
+    route: "/pages/landing-pages/construction-services",
+    component: <ConstructionServices />,
   },
   {
     name: "Kontakty",
     icon: <Icon>contacts</Icon>,
     route: "/pages/landing-pages/authors",
     component: <Author />,
+  },
+  {
+    name: "Volná místa",
+    icon: <Icon>groupaddsharp</Icon>,
+    route: "/pages/landing-pages/jobs",
+    component: <Jobs />,
   },
   {
     name: "O firmě",

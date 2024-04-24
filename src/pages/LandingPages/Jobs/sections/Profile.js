@@ -20,12 +20,7 @@ import Icon from "@mui/material/Icon";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKAvatar from "components/MKAvatar";
-import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
-
-// Images
-import profilePicture from "assets/images/bruce-mars.jpg";
 
 function Profile() {
   return (
@@ -38,7 +33,9 @@ function Profile() {
                 <MKTypography variant="h3">Volné pozice:</MKTypography>
               </MKBox>
               <MKTypography variant="body1" fontWeight="light" color="text">
-                Hledáme pracovité a poctivé pracovníky. Dobře odvedená práce je u nás vždy náležitě ohodnocena. <br />
+                Hledáme pracovité a poctivé pracovníky. Dobře odvedená práce je u nás vždy náležitě
+                ohodnocena.
+                <br />
                 <MKTypography
                   component="a"
                   href="/pages/landing-pages/authors"

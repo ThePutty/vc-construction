@@ -28,14 +28,13 @@ import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // Routes
 import routes from "routes";
-import footerRoutes from "footer.routes";
 
 // Image
 import bgImage from "assets/images/illustrations/nbt1.jpg";
+import Footer from "../Jobs/sections/Footer";
 
 function ContactUs() {
   const [input1, setInput1] = useState("");
@@ -198,7 +197,7 @@ function ContactUs() {
                     <MKInput
                       variant="standard"
                       label="Poptávka *"
-                      placeholder="detaillní popis požadovaných prací a požadavků"
+                      placeholder="detailní popis požadovaných prací a požadavků"
                       name="message"
                       onChange={(e) => setInput5(e.target.value)}
                       InputLabelProps={{ shrink: true }}
@@ -225,9 +224,7 @@ function ContactUs() {
           </MKBox>
         </Grid>
       </Grid>
-      <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
-      </MKBox>
+      <Footer />
     </>
   );
 }

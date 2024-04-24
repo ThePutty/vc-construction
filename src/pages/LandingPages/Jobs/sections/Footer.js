@@ -37,7 +37,7 @@ function Footer() {
             mb={{ xs: 3, lg: 0 }}
           >
             <MKTypography variant="h6" textTransform="uppercase" mb={{ xs: 2, lg: 3 }}>
-              Material Design
+              Stavební firma - Václav Čáp
             </MKTypography>
             <Stack
               component="ul"
@@ -59,7 +59,7 @@ function Footer() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Home
+                  Služby
                 </MKTypography>
               </MKBox>
               <MKBox component="li">
@@ -72,7 +72,7 @@ function Footer() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  About
+                  Kontakty
                 </MKTypography>
               </MKBox>
               <MKBox component="li">
@@ -85,7 +85,7 @@ function Footer() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Blog
+                  Volná místa
                 </MKTypography>
               </MKBox>
               <MKBox component="li">
@@ -98,66 +98,30 @@ function Footer() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Services
+                  O firmě
                 </MKTypography>
               </MKBox>
             </Stack>
             <MKTypography variant="button" opacity={0.8}>
-              Copyright © <script>document.write(new Date().getFullYear())</script>2021 Material
-              Design by Creative Tim.
+              Copyright &copy; 2024 Všechna práva vyhrazena.
             </MKTypography>
           </Grid>
+
           <Grid item xs={12} lg={6} ml="auto" textAlign={{ xs: "center", lg: "right" }}>
             <MKTypography variant="body1" fontWeight="bold" mb={6} sx={{ fontSize: "1.125rem" }}>
-              The reward for getting on the stage is fame. The price of fame is you can&apos;t get
-              off the stage.
-            </MKTypography>
-            <MKTypography
-              component={Link}
-              href="#dribbble"
-              target="_blank"
-              rel="noreferrer"
-              variant="body2"
-              color="dark"
-              opacity={0.5}
-              mr={3}
-            >
-              <i className="fab fa-dribbble" />
-            </MKTypography>
-            <MKTypography
-              component={Link}
-              href="#twitter"
-              target="_blank"
-              rel="noreferrer"
-              variant="body2"
-              color="dark"
-              opacity={0.5}
-              mr={3}
-            >
-              <i className="fab fa-twitter" />
-            </MKTypography>
-            <MKTypography
-              component={Link}
-              href="#pinterest"
-              target="_blank"
-              rel="noreferrer"
-              variant="body2"
-              color="dark"
-              opacity={0.5}
-              mr={3}
-            >
-              <i className="fab fa-pinterest" />
-            </MKTypography>
-            <MKTypography
-              component={Link}
-              href="#github"
-              target="_blank"
-              rel="noreferrer"
-              variant="body2"
-              color="dark"
-              opacity={0.5}
-            >
-              <i className="fab fa-github" />
+              Kompletační a dokončovací práce, stavební práce, stavební dozor.
+              <br />
+              KONTAKTUJTE NÁS
+              <MKTypography variant="button" fontWeight="regular" opacity={0.8}>
+                <ul>
+                  <b>Sídlo</b>: Švábenice 81, 68323
+                  <br />
+                  <b>Tel</b>: +420 111 111 111 &nbsp; &nbsp; &nbsp; &nbsp; <br />
+                  <b>IČO</b>: 02717727 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp;&nbsp;
+                  <br />
+                </ul>
+              </MKTypography>
             </MKTypography>
           </Grid>
         </Grid>

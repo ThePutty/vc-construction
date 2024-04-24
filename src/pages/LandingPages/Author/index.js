@@ -15,18 +15,19 @@ Coded by www.creative-tim.com
 
 // @mui material components
 import Card from "@mui/material/Card";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
+import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 
 // Author page sections
-import Profile from "pages/LandingPages/Author/sections/Profile";
-import Posts from "pages/LandingPages/Author/sections/Posts";
 import Contact from "pages/LandingPages/Author/sections/Contact";
-import Footer from "pages/LandingPages/Author/sections/Footer";
+import Footer from "pages/LandingPages/Jobs/sections/Footer";
 
 // Routes
 import routes from "routes";
@@ -63,7 +64,32 @@ function Author() {
             display: "grid",
             placeItems: "center",
           }}
-        />
+        >
+          <Container>
+            <Grid
+              container
+              item
+              xs={12}
+              lg={8}
+              justifyContent="center"
+              alignItems="center"
+              flexDirection="column"
+              sx={{ mx: "auto", textAlign: "center" }}
+            >
+              <MKTypography
+                variant="h1"
+                color="white"
+                sx={({ breakpoints, typography: { size } }) => ({
+                  [breakpoints.down("md")]: {
+                    fontSize: size["3xl"],
+                  },
+                })}
+              >
+                Kontakty
+              </MKTypography>
+            </Grid>
+          </Container>
+        </MKBox>
         <Card
           sx={{
             p: 2,
@@ -75,10 +101,8 @@ function Author() {
             boxShadow: ({ boxShadows: { xxl } }) => xxl,
           }}
         >
-          <Profile />
-          <Posts />
+          <Contact />
         </Card>
-        <Contact />
         <Footer />
       </MKBox>
     </>

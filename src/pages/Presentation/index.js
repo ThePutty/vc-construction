@@ -24,14 +24,12 @@ import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import CenteredFooter from "examples/Footers/CenteredFooter";
-import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
+import Footer from "pages/LandingPages/Jobs/sections/Footer";
 
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
 import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
 
 // Presentation page components
 import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
@@ -110,12 +108,9 @@ function Presentation() {
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
         </Container>
-        <Download />
         <Testimonials />
       </Card>
-      <MKBox mt="auto">
-        <CenteredFooter />
-      </MKBox>
+      <Footer />
     </>
   );
 }

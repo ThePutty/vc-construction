@@ -22,7 +22,7 @@ import MKBox from "components/MKBox";
 
 // Material Kit 2 React examples
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
-import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
+import CenteredBlogCardAbout from "examples/Cards/BlogCards/CenteredBlogCardAbout";
 
 function Information() {
   return (
@@ -35,8 +35,8 @@ function Information() {
                 <MKBox mb={5}>
                   <DefaultInfoCard
                     icon="public"
-                    title="Fully integrated"
-                    description="We get insulted by others, lose trust for those We get back freezes"
+                    title="Firma"
+                    description="Firma působí ve stavebnictví od roku 2013. Jejím zakladatelem a majitelem je Václav Čáp."
                   />
                 </MKBox>
               </Grid>
@@ -44,8 +44,8 @@ function Information() {
                 <MKBox mb={5}>
                   <DefaultInfoCard
                     icon="payments"
-                    title="Payments functionality"
-                    description="We get insulted by others, lose trust for those We get back freezes"
+                    title="Zákazníkův ideál"
+                    description="Naším krédem je především naplňovat představy našich zákazníků k jejich plné spokojenosti."
                   />
                 </MKBox>
               </Grid>
@@ -53,8 +53,8 @@ function Information() {
                 <MKBox mb={{ xs: 5, md: 0 }}>
                   <DefaultInfoCard
                     icon="apps"
-                    title="Prebuilt components"
-                    description="We get insulted by others, lose trust for those We get back freezes"
+                    title="Důvěryhodná jistota"
+                    description="Jsme certifikovanou českou spolehlivou firmou."
                   />
                 </MKBox>
               </Grid>
@@ -62,18 +62,18 @@ function Information() {
                 <MKBox mb={{ xs: 5, md: 0 }}>
                   <DefaultInfoCard
                     icon="3p"
-                    title="Improved platform"
-                    description="We get insulted by others, lose trust for those We get back freezes"
+                    title="Komplexní stavební řešení"
+                    description="Díky veškeré vlastní technice provádíme kvalitně všechny stavební práce až po stavební práce."
                   />
                 </MKBox>
               </Grid>
             </Grid>
           </Grid>
           <Grid item xs={12} lg={4} sx={{ ml: "auto", mt: { xs: 3, lg: 0 } }}>
-            <CenteredBlogCard
-              image="https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-              title="Get insights on Search"
-              description="Website visitors today demand a frictionless user expericence — especially when using search. Because of the hight standards."
+            <CenteredBlogCardAbout
+              image="https://img.freepik.com/free-photo/crop-architect-opening-blueprint_23-2147710985.jpg?w=1480&t=st=1713887088~exp=1713887688~hmac=f88a38fb06891c2800b76068b29df93ba9037e49531427020146d46fa7b68f9f"
+              title="Stavební firma - Václav Čáp"
+              description="Specialista na výkopové práce. Jako stavební firma působíme na celém českém trhu, převážně však v Jihomoravském kraji. Jsme prioritně zaměřeni na výkopové práce a rekonstrukce."
               action={{
                 type: "internal",
                 route: "pages/company/about-us",

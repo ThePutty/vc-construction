@@ -29,8 +29,8 @@ import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
 
 // Images
-import bgFront from "assets/images/rotating-card-bg-front.jpeg";
-import bgBack from "assets/images/rotating-card-bg-back.jpeg";
+import bgFront from "assets/images/rotating-card-bg-front.jpg";
+import bgBack from "assets/images/rotating-card-bg-back.jpg";
 
 function Information() {
   return (

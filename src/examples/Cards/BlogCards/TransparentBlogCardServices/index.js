@@ -14,37 +14,18 @@ Coded by www.creative-tim.com
 */
 
 // react-router components
-import { Link } from "react-router-dom";
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
 // @mui material components
 import Card from "@mui/material/Card";
-import Icon from "@mui/material/Icon";
-import MuiLink from "@mui/material/Link";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function TransparentBlogCardServices({ image, title, description, action }) {
-  const cardActionStyles = {
-    display: "flex",
-    alignItems: "center",
-    width: "max-content",
-
-    "& .material-icons, .material-icons-round,": {
-      transform: `translateX(2px)`,
-      transition: "transform 0.2s cubic-bezier(0.34,1.61,0.7,1.3)",
-    },
-
-    "&:hover .material-icons, &:focus .material-icons, &:hover .material-icons-round, &:focus .material-icons-round":
-      {
-        transform: `translateX(6px)`,
-      },
-  };
-
+function TransparentBlogCardServices({ image, title, description }) {
   const imageTemplate = (
     <MKBox position="relative" borderRadius="lg">
       <MKBox

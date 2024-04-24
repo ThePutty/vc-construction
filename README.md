@@ -1,6 +1,8 @@
 # Introduction
-React and gp web
-This web is base on https://github.com/creativetimofficial/material-kit-react
+React and gp web.
+
+This web is base on https://github.com/creativetimofficial/material-kit-react.
+
 I create custom domains, and this project is called 'Mash'.
 
 ## How to start

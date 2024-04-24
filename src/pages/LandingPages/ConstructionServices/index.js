@@ -21,22 +21,13 @@ import Grid from "@mui/material/Grid";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import RotatingCard from "examples/Cards/RotatingCard";
-import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
-import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
-import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 import MKButton from "components/MKButton";
-
-import bgFront from "assets/images/rotating-card-bg-front.jpeg";
-import bgBack from "assets/images/rotating-card-bg-back.jpeg";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 
 // ConstructionServices page sections
-import Profile from "pages/LandingPages/ConstructionServices/sections/Profile";
 import Posts from "pages/LandingPages/ConstructionServices/sections/Posts";
-import Contact from "pages/LandingPages/ConstructionServices/sections/Contact";
 import Footer from "pages/LandingPages/ConstructionServices/sections/Footer";
 
 // Routes
@@ -74,7 +65,7 @@ function ConstructionServices() {
             display: "grid",
             placeItems: "center",
           }}
-          >
+        >
           <Container>
             <Grid
               container
@@ -114,45 +105,54 @@ function ConstructionServices() {
           <Posts />
 
           <MKBox
-        variant="gradient"
-        bgColor="dark"
-        position="relative"
-        borderRadius="xl"
-        sx={{ overflow: "hidden" }}
-      >
-        <MKBox
-          component="img"
-          src={bgImage}
-          alt="pattern-lines"
-          position="absolute"
-          top={0}
-          left={0}
-          width="100%"
-          zIndex={1}
-          opacity={0.2}
-        />
-        <Container sx={{ position: "relative", zIndex: 2, py: 8 }}>
-          <Grid container item xs={12} md={7} justifyContent="center" mx="auto" textAlign="center">
-            <MKTypography variant="h3" color="white">
-              Zaujala vás nabídka stavebních prací?<br/>
-            </MKTypography>
-            <MKTypography variant="body2" color="white" mb={6}>
-              Stačí nám napsat a my se vám ozveme co nejdříve. Jsme tu, abychom vám pomohli realizovat vaše stavební plány a přání.
-            </MKTypography>
-            <MKButton
-              variant="gradient"
-              color="info"
-              size="large"
-              component="a"
-              href="/pages/landing-pages/contact-us"
-              sx={{ mb: 2 }}
-            >
-              Kontaktujte nás
-            </MKButton>
-          </Grid>
-        </Container>
-      </MKBox>
-
+            variant="gradient"
+            bgColor="dark"
+            position="relative"
+            borderRadius="xl"
+            sx={{ overflow: "hidden" }}
+          >
+            <MKBox
+              component="img"
+              src={bgImage}
+              alt="pattern-lines"
+              position="absolute"
+              top={0}
+              left={0}
+              width="100%"
+              zIndex={1}
+              opacity={0.2}
+            />
+            <Container sx={{ position: "relative", zIndex: 2, py: 8 }}>
+              <Grid
+                container
+                item
+                xs={12}
+                md={7}
+                justifyContent="center"
+                mx="auto"
+                textAlign="center"
+              >
+                <MKTypography variant="h3" color="white">
+                  Zaujala vás nabídka stavebních prací?
+                  <br />
+                </MKTypography>
+                <MKTypography variant="body2" color="white" mb={6}>
+                  Stačí nám napsat a my se vám ozveme co nejdříve. Jsme tu, abychom vám pomohli
+                  realizovat vaše stavební plány a přání.
+                </MKTypography>
+                <MKButton
+                  variant="gradient"
+                  color="info"
+                  size="large"
+                  component="a"
+                  href="/pages/landing-pages/contact-us"
+                  sx={{ mb: 2 }}
+                >
+                  Kontaktujte nás
+                </MKButton>
+              </Grid>
+            </Container>
+          </MKBox>
         </Card>
         <Footer />
       </MKBox>

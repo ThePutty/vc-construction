@@ -21,17 +21,12 @@ import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
-
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // Jobs page sections
 import Profile from "pages/LandingPages/Jobs/sections/Profile";
-import Posts from "pages/LandingPages/Jobs/sections/Posts";
-import Contact from "pages/LandingPages/Jobs/sections/Contact";
 import Footer from "pages/LandingPages/Jobs/sections/Footer";
 
 // Routes

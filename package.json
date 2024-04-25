@@ -1,9 +1,9 @@
 {
-  "homepage": "https://www.vaclavcap.cz",
+  "homepage": ".",
   "name": "vc-construct",
   "version": "2.1.0",
   "private": true,
-  "author": "puty@duck.com",
+  "author": "",
   "license": "",
   "description": "Stavební firma Václav Čáp",
   "dependencies": {

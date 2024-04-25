@@ -18,3 +18,5 @@ npm run build
 npm install --save-dev gh-pages
 npm run deploy -- -m "Deploy React app to GitHub Pages"
 ```
+
+## Change some custom domain in pages section

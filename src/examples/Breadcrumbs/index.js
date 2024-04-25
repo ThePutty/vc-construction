@@ -15,6 +15,7 @@ Coded by www.creative-tim.com
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
+import Icon from "@mui/material/Icon";
 
 // react-router-dom components
 import { Link } from "react-router-dom";
@@ -46,7 +47,7 @@ function Breadcrumbs({ routes, ...rest }) {
                 },
               }}
             >
-              {label}
+              {label} <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
             </MKTypography>
           ) : (
             <MKTypography key={label} variant="button" fontWeight="regular">

@@ -100,7 +100,7 @@ function CenteredFooter({ links, socials, light }) {
 
 // Setting default values for the props of CenteredFooter
 CenteredFooter.defaultProps = {
-  company: { href: "https://www.vaclavcap.cz", name: "Václav Čáp" },
+  company: { href: "https://theputty.github.io/vc-construction/", name: "Václav Čáp" },
   links: [
     { href: "/pages/landing-pages/jobs", name: "Volná místa" },
     { href: "/pages/landing-pages/about-us", name: "O firmě" },

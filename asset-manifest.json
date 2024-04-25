@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/vc-construction/static/js/main.21033310.js",
+    "static/media/bg-1.jpg": "/vc-construction/static/media/bg-1.da59be48513380137f1c.jpg",
+    "static/media/city-profile.jpg": "/vc-construction/static/media/city-profile.4d64bba97c3d1757379e.jpg",
+    "static/media/blog-9-4.jpg": "/vc-construction/static/media/blog-9-4.de736e0b751f453415a5.jpg",
+    "static/media/blog2.jpg": "/vc-construction/static/media/blog2.aba7a3cb94805e9557d1.jpg",
+    "static/media/bg-about-us.jpg": "/vc-construction/static/media/bg-about-us.cf9a123e2a3d371d53da.jpg",
+    "static/media/rotating-card-bg-front.jpg": "/vc-construction/static/media/rotating-card-bg-front.d17778c9e0070b87f1b8.jpg",
+    "static/media/rotating-card-bg-back.jpg": "/vc-construction/static/media/rotating-card-bg-back.0ecda394e47828a8c62e.jpg",
+    "static/media/nbt1.jpg": "/vc-construction/static/media/nbt1.acd651686809fd8f5d0f.jpg",
+    "static/media/testimonial-6-2.jpg": "/vc-construction/static/media/testimonial-6-2.21f2048f0b89919090f0.jpg",
+    "static/media/testimonial-6-3.jpg": "/vc-construction/static/media/testimonial-6-3.d35bef0d65354442d063.jpg",
+    "static/media/logo-makita.svg": "/vc-construction/static/media/logo-makita.00bbd7d0fd76efea6b13313ab3c344ab.svg",
+    "index.html": "/vc-construction/index.html",
+    "main.21033310.js.map": "/vc-construction/static/js/main.21033310.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.21033310.js"
+  ]
+}

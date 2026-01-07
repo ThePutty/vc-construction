@@ -19,4 +19,6 @@ npm install --save-dev gh-pages
 npm run deploy -- -m "Deploy React app to GitHub Pages"
 ```
 
-## Change some custom domain in pages section
+## Example here
+<img width="2257" height="1147" alt="image" src="https://github.com/user-attachments/assets/a8354fc5-99f6-438a-910b-d80dd2022ec1" />
+
